@@ -4,7 +4,7 @@ const Genre = () => {
   let [genre, setGenres] = useState(null);
 
   const fetchdata = () => {
-    let apiUrl = "http://localhost:1337/api/genres?populate=*";
+    let apiUrl = "https://movie-site-stapi.onrender.com/api/genres?populate=*";
     fetch(apiUrl)
       .then((response) => {
         return response.json();
