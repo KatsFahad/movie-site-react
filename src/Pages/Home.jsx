@@ -6,18 +6,16 @@ import Fightscene from "../components/Fightscene";
 import Footer from "../components/Footer";
 
 const Home = () => {
-    return (
-        <div>
-            <Header/>
-            <Banner/>
-            <Genre/>
-            <Mytop5/>
-            <Fightscene/>
-            <Footer/>
+  return (
+    <div>
+      <Header />
+      <Banner />
+      <Genre />
+      <Mytop5 />
+      <Fightscene />
+      <Footer />
+    </div>
+  );
+};
 
-
-        </div>
-     );
-}
- 
 export default Home;

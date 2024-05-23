@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Genreele from "./Genreele";
+import { Link } from "react-router-dom";
 const Genre = () => {
   let [genre, setGenres] = useState(null);
 
@@ -32,6 +33,7 @@ const Genre = () => {
                 image={`http://localhost:1337${ele.attributes.image.data.attributes.url}`}
                 title={ele.attributes.title}
                 key={index}
+                to={ele.attributes.link}
               />
             );
           })

@@ -7,7 +7,7 @@ const Genreele = (props) => {
         <img src={props.image} alt="Genre image" className="w-[200px] h-[200px]" />
       </div>
       <div>
-        <Link>
+        <Link to={props.link}>
           <button>{props.title}</button>
         </Link>
       </div>

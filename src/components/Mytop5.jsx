@@ -24,7 +24,7 @@ const Mytop5 = () => {
     return ( 
         <div>
            <h2> My best top 5 movies from all Categories</h2>
-           <div>
+           <div className="flex mx-[1.5rem] gap-[4rem]">
             {
                 top5 !== null? (
                     top5.map((ele, index)=>{

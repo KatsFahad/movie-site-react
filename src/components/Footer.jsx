@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="mt-[40px] p-[35px] bg-[black] mx-[1.5rem] mb-[1rem]">
       <p className="text-center text-white">Copyright &copy;2024 Movie Site.</p>
-      <div class="text-center mt-[20px]">
+      <div className="text-center mt-[20px]">
         <select>
           <option>English</option>
           <option>Detush</option>
