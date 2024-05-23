@@ -22,7 +22,7 @@ const Fightscene = () => {
     <div>
       <h2>Fight scenes</h2>
       <p>Click on the images below to see one of the best fight scenes</p>
-      <div id="imgs-b" className="flex">
+      <div id="imgs-b" className="flex mx-[1.5rem]">
         <a href="https://www.youtube.com/watch?v=X7mzHk-FhCA" target="_blank">
           <img className="w-[%]" src="src/images/img-3.webp" alt="img" />
         </a>
