@@ -19,17 +19,11 @@ const App = () => {
         <Route path="/" element={<Home/>}/>
         <Route path="/categories" element={<Categories/>}/>
         <Route path="/aboutme" element={<AboutMe/>}/>
-      </Routes>
-    </BrowserRouter>
-
-    <BrowserRouter>
-      <Routes>
         <Route path="/action"  element={<Action/>}/>
         <Route path="/adventure" element={<Adventure/>}/>
         <Route path="/animation" element={<Animation/>}/>
         <Route path="/comic" element={<Comic/>}/>
         <Route path="/horror" element={<Horror/>}/>
-        
       </Routes>
     </BrowserRouter>
 
