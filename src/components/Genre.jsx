@@ -33,7 +33,7 @@ const Genre = () => {
                 image={`http://localhost:1337${ele.attributes.image.data.attributes.url}`}
                 title={ele.attributes.title}
                 key={index}
-                to={ele.attributes.link}
+                go={ele.attributes.go}
               />
             );
           })

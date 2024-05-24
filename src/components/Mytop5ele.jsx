@@ -10,7 +10,10 @@ const Mytop5ele = (props) => {
       </div>
       <img src={props.image} alt="image" className="w-[300px] h-[300px]" />
       <div className="text-center mt-[1.5rem] mb-[1rem]">
-        <Link to={props.go} className="text-[15px] text-[black] bg-[cyan] py-[10px] px-[20px] font-bold rounded-[8px]">
+        <Link
+          to={props.go}
+          className="text-[15px] text-[black] bg-[cyan] py-[10px] px-[20px] font-bold rounded-[8px]"
+        >
           <button>Watch Trailer</button>
         </Link>
       </div>

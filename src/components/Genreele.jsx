@@ -11,7 +11,7 @@ const Genreele = (props) => {
           />
         </div>
         <div className="text-center mt-[1.5rem]">
-          <Link className="text-[15px] text-[black] bg-[cyan] py-[10px] px-[20px] font-bold" id="ho" to={props.link}>
+          <Link className="text-[15px] text-[black] bg-[cyan] py-[10px] px-[20px] font-bold" id="ho" to={props.go}>
             <button>{props.title}</button>
           </Link>
         </div>
