@@ -27,7 +27,7 @@ const Adventure = () => {
     <div>
       <Header/>
       <section>
-                <h2>My best top 5 movies for Adventure</h2>
+                <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">My best top 5 movies for Adventure</h2>
                 <div>
                 {
                 adventure !== null? (

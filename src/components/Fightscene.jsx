@@ -20,8 +20,8 @@ const Fightscene = () => {
   }, []);
   return (
     <div>
-      <h2>Fight scenes</h2>
-      <p>Click on the images below to see one of the best fight scenes</p>
+      <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">Fight scenes</h2>
+      <p className="text-white font-[Satisfy] text-4xl ml-[1.5rem]">Click on the images below to see one of the best fight scenes</p>
       <div id="imgs-b" className="flex mx-[1.5rem]">
         <a href="https://www.youtube.com/watch?v=X7mzHk-FhCA" target="_blank">
           <img className="w-[%]" src="src/images/img-3.webp" alt="img" />

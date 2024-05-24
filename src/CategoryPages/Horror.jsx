@@ -24,7 +24,7 @@ const Horror = () => {
     <div>
       <Header />
       <section>
-        <h2>My best top 5 movies for Horror</h2>
+        <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">My best top 5 movies for Horror</h2>
         <div className="flex mx-[1.5rem] gap-[4rem]">
           {horror !== null ? (
             horror.map((ele, index) => {

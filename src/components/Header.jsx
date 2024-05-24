@@ -6,15 +6,15 @@ const Header = () => {
     let navLinks = [
         {link: 'Home', to: '/'},
         {link: 'Categories', to: '/categories' },
-        {link:  'New', to: '/new'},
-        {link: 'Popular', to: '/popular'},
-        {link: 'Upcoming', to: '/upcoming'},
+        {link:  'New', to: 'https://www.moviefone.com/movies/'},
+        {link: 'Popular', to: 'https://www.imdb.com/chart/moviemeter/'},
+        {link: 'Upcoming', to: '/https://www.rottentomatoes.com/browse/movies_coming_soon/'},
         {link: 'About Me', to: '/aboutme'}
     ]
 
 
     return ( 
-            <div className="flex gap-[4rem] mt-[2rem] ml-[12%] items-center">
+            <div className="flex gap-[4rem] mt-[2rem] ml-[12%] items-center mb-[1.5rem]">
                 <h1 className="text-[#5cfaff] text-[2.5rem]" id="shadow">My Movie <br /> Ranking Site</h1>
                 <div>
                     <nav>

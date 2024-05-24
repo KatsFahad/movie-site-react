@@ -21,9 +21,9 @@ const Genre = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mb-[2rem]">
       <div>
-        <h2 className="text-center">Movie Categories</h2>
+        <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">Movie Categories</h2>
       </div>
       <div className="flex justify-around">
         {genre !== null ? (

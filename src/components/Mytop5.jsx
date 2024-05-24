@@ -22,8 +22,8 @@ const Mytop5 = () => {
 
 
     return ( 
-        <div>
-           <h2> My best top 5 movies from all Categories</h2>
+        <div className="mb-[2rem]">
+           <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold"> My best top 5 movies from all Categories</h2>
            <div className="flex mx-[1.5rem] gap-[4rem]">
             {
                 top5 !== null? (
@@ -32,6 +32,7 @@ const Mytop5 = () => {
                         no={ele.attributes.number}
                         title={ele.attributes.title}
                         image={`http://localhost:1337${ele.attributes.image.data.attributes.url}`}
+                        go={ele.attributes.go}
                         />
                     })
                 ):
