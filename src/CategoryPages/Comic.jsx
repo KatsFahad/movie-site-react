@@ -1,13 +1,51 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Comiccomp from "./CategoryComponents/ComicCom";
+import { useState, useEffect } from "react";
 
 const Comic = () => {
-    return ( 
+  let [comic, setComic] = useState(null);
+  const fetchData = () => {
+    let apiUrl = "https://movie-site-stapi.onrender.com/api/comics?populate=*";
+
+    fetch(apiUrl)
+      .then((response) => {
+        return response.json();
+      })
+      .then((dataObj) => {
+        let comic5 = dataObj.data;
+        setComic(comic5);
+      });
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  return (
+    <div>
+      <Header />
+      <section>
+        <h2>My best top 5 movies for Comic</h2>
         <div>
-            <Header/>
-            <Footer/>
+          {comic !== null ? (
+            comic.map((ele, index) => {
+              return (
+                <Comiccomp
+                  key={index}
+                  no={ele.attributes.number}
+                  title={ele.attributes.title}
+                  image={`http://localhost:1337${ele.attributes.image.data.attributes.url}`}
+                />
+              );
+            })
+          ) : (
+            <p>Loading</p>
+          )}
         </div>
-     );
-}
- 
+      </section>
+      <Footer />
+    </div>
+  );
+};
+
 export default Comic;
