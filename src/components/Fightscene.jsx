@@ -24,7 +24,7 @@ const Fightscene = () => {
       <p className="text-white font-[Satisfy] text-4xl ml-[1.5rem]">Click on the images below to see one of the best fight scenes</p>
       <div id="imgs-b" className="flex mx-[1.5rem]">
         <a href="https://www.youtube.com/watch?v=X7mzHk-FhCA" target="_blank">
-          <img className="w-[%]" src="src/images/img-3.webp" alt="img" />
+          <img className="" src="src/images/img-3.webp" alt="img" />
         </a>
         <a
           href="https://www.youtube.com/watch?v=zWTbLZCR84k&t=114s"

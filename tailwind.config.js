@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     screens: {
-      '@412': {'max': '412px'}
+      '@412': {'max': '412px'},
+      '@320': {'max': '320px'}
     },
     extend: {},
   },
