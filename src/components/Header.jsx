@@ -14,11 +14,11 @@ const Header = () => {
 
 
     return ( 
-            <div className="flex gap-[4rem] mt-[2rem] ml-[12%] items-center mb-[1.5rem]">
+            <div className="flex gap-[4rem] mt-[2rem] ml-[10rem] items-center mb-[1.5rem]">
                 <h1 className="text-[#5cfaff] text-[2.5rem]" id="shadow">My Movie <br /> Ranking Site</h1>
                 <div>
                     <nav>
-                        <ul className="flex gap-10 text-[#5cfaff] text-[25px]" id="ul">
+                        <ul className="flex gap-10" id="ul">
                             {
                                 navLinks.map((element, index)=>{
                                     return <Navlinks key={index} link={element.link} to={element.to}/>
