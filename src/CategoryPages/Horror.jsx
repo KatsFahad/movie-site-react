@@ -25,7 +25,7 @@ const Horror = () => {
       <Header />
       <section>
         <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">My best top 5 movies for Horror</h2>
-        <div className="flex mx-[1.5rem] gap-[4rem]">
+        <div className="flex mx-[1.5rem] gap-[4rem] @412:flex-wrap ml-[3rem]">
           {horror !== null ? (
             horror.map((ele, index) => {
               return (
@@ -33,7 +33,7 @@ const Horror = () => {
                   key={index}
                   no={ele.attributes.number}
                   title={ele.attributes.title}
-                  image={`https://movie-site-stapi.onrender.com${ele.attributes.image.data.attributes.url}`}
+                  image={`http://localhost:1337${ele.attributes.image.data.attributes.url}`}
                   go={ele.attributes.go}
                 />
               );

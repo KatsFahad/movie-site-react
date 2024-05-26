@@ -26,7 +26,7 @@ const Comic = () => {
       <Header />
       <section>
         <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">My best top 5 movies for Comic</h2>
-        <div className="flex mx-[1.5rem] gap-[4rem]">
+        <div className="flex mx-[1.5rem] gap-[4rem] @412:flex-wrap ml-[3rem]">
           {comic !== null ? (
             comic.map((ele, index) => {
               return (
@@ -34,7 +34,7 @@ const Comic = () => {
                   key={index}
                   no={ele.attributes.number}
                   title={ele.attributes.title}
-                  image={`https://movie-site-stapi.onrender.com${ele.attributes.image.data[0].attributes.url}`}
+                  image={`http://localhost:1337${ele.attributes.image.data[0].attributes.url}`}
                   go={ele.attributes.go}
                 />
               );
