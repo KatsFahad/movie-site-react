@@ -25,7 +25,7 @@ const Genre = () => {
       <div>
         <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">Movie Categories</h2>
       </div>
-      <div className="flex justify-around">
+      <div className="flex justify-around @412:flex-wrap">
         {genre !== null ? (
           genre.map((ele, index) => {
             return (

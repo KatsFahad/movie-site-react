@@ -17,13 +17,7 @@ body{
 #shadow{
     text-shadow: 0px 10px 10px #5cfaff;
 }
-#ul li:hover{
-    color: black;
-    background-color: #5cfaff;
-    padding: 5px 10px;
-    border-radius: 10px;
 
-} 
 #imgs-b img{
     height: 400px;
     border: 2px solid whitesmoke;

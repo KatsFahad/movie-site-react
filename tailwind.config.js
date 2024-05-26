@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     screens: {
-      '@360': {'max': '360px'}
+      '@412': {'max': '412px'}
     },
     extend: {},
   },
