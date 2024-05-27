@@ -15,7 +15,16 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex gap-[4rem] mt-[2rem] ml-[10rem] mb-[1.5rem]" id="h-cont">
+    <div
+      className="flex gap-[4rem] mt-[2rem] ml-[10rem] mb-[1.5rem]
+      @320:flex-wrap text-center ml-[3rem] mt-[2px] 
+      @360:flex-wrap text-center ml-[3rem] mt-[2px] 
+      @375:flex-wrap text-center ml-[3rem] mt-[2px]
+      @393:flex-wrap text-center ml-[3rem] mt-[2px] @414:flex-wrap text-center ml-[3rem] mt-[2px]
+      @428:flex-wrap text-center ml-[3rem] mt-[2px]
+      @768:flex-wrap text-center ml-[3rem] mt-[2px]"
+      id="h-cont"
+    >
       <div>
         <h1 className="text-[#5cfaff] text-[2.5rem]" id="shadow">
           My Movie <br /> Ranking Site
@@ -23,7 +32,10 @@ const Header = () => {
       </div>
       <div id="both">
         <nav>
-          <ul className="flex gap-10" id="ul">
+          <ul
+            className="flex gap-10 @320: flex-wrap @360:flex-wrap @375:flex-wrap"
+            id="ul"
+          >
             {navLinks.map((element, index) => {
               return (
                 <Navlinks key={index} link={element.link} to={element.to} />
@@ -31,15 +43,21 @@ const Header = () => {
             })}
           </ul>
         </nav>
-        <div className="flex justify-between items-center mt-[1rem]" id="inp">
-          <div id="ser">
+        <div
+          className="flex justify-between items-center mt-[1rem] 
+          @320:flex-wrap 
+          @360:flex-wrap @375:flex-wrap @393:flex-wrap @414:flex-wrap
+          @428:flex-wrap"
+          id="inp"
+        >
+          <div className="mb-[1rem]" id="ser">
             <input
               type="text"
               placeholder="search"
               className="w-60 border-cyan-50 leading-7 text-[blue]"
             />
           </div>
-          <div className="logs">
+          <div className="@768: mr-[5rem]" id="logs">
             <Link>
               <button>Login</button>
             </Link>

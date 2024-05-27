@@ -1,7 +1,7 @@
 body{
     background-color:#1f1f1f;
 }
-.logs button{
+#logs button{
     border: none;
     padding: 10px 20px;
     font-size: 20px;
@@ -11,7 +11,7 @@ body{
 
 
 }
-.logs button:hover{
+#logs button:hover{
     box-shadow: 0 0 25px cyan;
 }
 #shadow{
@@ -31,18 +31,15 @@ body{
     box-shadow: 0 0 120px gold;
 }
 
+
+{/*
 @media screen and (max-width: 884px){
     #h-cont{
-        flex-wrap: wrap;
-        align-items: center;
-        margin-left: 3rem;
+        width: 1rem;
+        gap: 10px;
     }
     #shadow{
-        margin-left: 15rem;
-    }
-    #both{
-        margin-left: 1.5rem;
-
+        font-size: 1.5rem;
     }
 }
 
@@ -113,3 +110,4 @@ body{
     }
 
 }
+*/}

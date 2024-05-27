@@ -8,7 +8,8 @@ const Mytop5ele = (props) => {
           {props.title}
         </h3>
       </div>
-      <img src={props.image} alt="image" className="w-[300px] h-[300px]" />
+      <img src={props.image} alt="image" className="w-[300px] h-[300px]
+      @768: w-[250px]" />
       <div className="text-center mt-[1.5rem] mb-[1rem]">
         <Link
           to={props.go}

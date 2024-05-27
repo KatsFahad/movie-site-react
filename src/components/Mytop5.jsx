@@ -25,7 +25,8 @@ const Mytop5 = () => {
       <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">
         My best top 5 movies from all Categories
       </h2>
-      <div className="flex mx-[1.5rem] gap-[4rem] @412:flex-wrap ml-[3rem] @428:flex-wrap ml-[4rem] @834:flex-wrap @884:flex-wrap">
+      <div className="flex mx-[1.5rem] gap-[4rem] @412:flex-wrap ml-[3rem] @428:flex-wrap ml-[4rem] 
+      @768: flex-wrap @834:flex-wrap @884:flex-wrap">
         {top5 !== null ? (
           top5.map((ele, index) => {
             return (
