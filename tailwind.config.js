@@ -6,8 +6,11 @@ export default {
   ],
   theme: {
     screens: {
+      '@884': {'max': '884px'},
+      '@834': {'max': '834px'},
+      '@428': {'max': '428px'},
       '@412': {'max': '412px'},
-      '@320': {'max': '320px'}
+      '@320': {'max': '320px'},
     },
     extend: {},
   },

@@ -30,3 +30,5 @@ body{
 #ho :hover{
     box-shadow: 0 0 120px gold;
 }
+
+@media screen and (max-width: 320px){}

@@ -15,8 +15,7 @@ const Header = () => {
   ];
 
   return (
-    // 
-    <div className="flex gap-[4rem] mt-[2rem] ml-[10rem] items-center mb-[1.5rem] @412:flex-col mx-auto ml-[2rem] mt-[5px] ">
+    <div className="flex gap-[4rem] mt-[2rem] ml-[10rem] mb-[1.5rem]">
       <div>
         <h1 className="text-[#5cfaff] text-[2.5rem]" id="shadow">
           My Movie <br /> Ranking Site
@@ -24,8 +23,7 @@ const Header = () => {
       </div>
       <div>
         <nav>
-        {/*  */}
-          <ul className="flex gap-10 @412:flex-col grid grid-cols-3 @320: grid grid-cols-2" id="ul">
+          <ul className="flex gap-10" id="ul">
             {navLinks.map((element, index) => {
               return (
                 <Navlinks key={index} link={element.link} to={element.to} />
@@ -33,12 +31,12 @@ const Header = () => {
             })}
           </ul>
         </nav>
-        <div className="flex justify-between items-center mt-[1rem] @412:flex-wrap mx-auto ml-[3rem]">
+        <div className="flex justify-between items-center mt-[1rem]">
           <div>
             <input
               type="text"
               placeholder="search"
-              className="w-60 border-cyan-50 leading-7 text-[blue] @412:text-center mb-[1rem] @320:mr-[3rem]"
+              className="w-60 border-cyan-50 leading-7 text-[blue]"
             />
           </div>
           <div className="logs">
