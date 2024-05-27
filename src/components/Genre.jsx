@@ -30,7 +30,7 @@ const Genre = () => {
           genre.map((ele, index) => {
             return (
               <Genreele
-                image={`http://localhost:1337${ele.attributes.image.data.attributes.url}`}
+                image={`https://movie-site-stapi.onrender.com${ele.attributes.image.data.attributes.url}`}
                 title={ele.attributes.title}
                 key={index}
                 go={ele.attributes.go}

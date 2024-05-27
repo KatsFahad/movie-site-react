@@ -34,7 +34,7 @@ const Mytop5 = () => {
                 key={index}
                 no={ele.attributes.number}
                 title={ele.attributes.title}
-                image={`http://localhost:1337${ele.attributes.image.data.attributes.url}`}
+                image={`https://movie-site-stapi.onrender.com${ele.attributes.image.data.attributes.url}`}
                 go={ele.attributes.go}
               />
             );
