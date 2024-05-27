@@ -15,13 +15,13 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex gap-[4rem] mt-[2rem] ml-[10rem] mb-[1.5rem]">
+    <div className="flex gap-[4rem] mt-[2rem] ml-[10rem] mb-[1.5rem]" id="h-cont">
       <div>
         <h1 className="text-[#5cfaff] text-[2.5rem]" id="shadow">
           My Movie <br /> Ranking Site
         </h1>
       </div>
-      <div>
+      <div id="both">
         <nav>
           <ul className="flex gap-10" id="ul">
             {navLinks.map((element, index) => {
@@ -31,8 +31,8 @@ const Header = () => {
             })}
           </ul>
         </nav>
-        <div className="flex justify-between items-center mt-[1rem]">
-          <div>
+        <div className="flex justify-between items-center mt-[1rem]" id="inp">
+          <div id="ser">
             <input
               type="text"
               placeholder="search"
