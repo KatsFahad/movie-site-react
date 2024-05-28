@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
+import veno from '/src/images/venom.jpg'
 
 const Signup = () => {
   let [name, setName] = useState("");
@@ -119,7 +120,7 @@ const Signup = () => {
       </div>
       
       <div>
-        <img className="w-[20rem]" src="src/images/venom.jpg" alt="imge" />
+        <img className="w-[20rem]" src={veno} alt="imge" />
       </div>
     </div>
   );
