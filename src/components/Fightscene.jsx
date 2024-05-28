@@ -38,7 +38,7 @@ const Fightscene = () => {
           <img className="w-[%]" src={img4} alt="img" />
         </a>
         <a href="https://www.youtube.com/watch?v=kjiSVunIWpU" target="_blank">
-          <img className="w-[120rem]" src={im1} alt="img" />
+          <img className="w-[120rem]" src={img1} alt="img" />
         </a>
         <a href="https://www.youtube.com/watch?v=VOdkIo2Cark" target="_blank">
           <img className="w-[%]" src={img2} alt="img" />

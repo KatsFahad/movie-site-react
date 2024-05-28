@@ -17,7 +17,7 @@ const Signup = () => {
   const createAccount = (event) => {
     event.preventDefault();
     if (name && email && password) {
-      let apiUrl = "https://movie-site-stapi.onrender.com/api/users?populate=*";
+      let apiUrl = "https://movie-site-stapi.onrender.com/api/users";
       let requestObject = {
         method: "POST",
         body: JSON.stringify({
