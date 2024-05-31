@@ -9,7 +9,7 @@ import Action from "./CategoryPages/Action";
 import Animation from "./CategoryPages/Animation";
 import Horror from "./CategoryPages/Horror";
 import Adventure from "./CategoryPages/Adventure";
-import Signup from "./Signup/Signup";
+import Signup from "./Pages/Signup";
 
 const App = () => {
   return ( 
@@ -36,3 +36,6 @@ const App = () => {
 }
  
 export default App;
+
+
+
