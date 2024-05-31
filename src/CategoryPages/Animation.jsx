@@ -37,7 +37,7 @@ const Animation = () => {
                   key={index}
                   no={ele.attributes.number}
                   title={ele.attributes.title}
-                  image={`https://movie-site-stapi.onrender.com${ele.attributes.image.data.attributes.url}`}
+                  image={ele.attributes.image.data.attributes.url}
                   go={ele.attributes.go}
                 />
               );

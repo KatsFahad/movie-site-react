@@ -37,7 +37,7 @@ const Action = () => {
                   key={index}
                   no={ele.attributes.number}
                   title={ele.attributes.title}
-                  image={`https://movie-site-stapi.onrender.com${ele.attributes.image.data[0].attributes.url}`}
+                  image={ele.attributes.image.data[0].attributes.url}
                   go={ele.attributes.go}
                 />
               );
