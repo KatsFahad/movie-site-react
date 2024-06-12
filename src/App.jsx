@@ -11,6 +11,7 @@ import Horror from "./CategoryPages/Horror";
 import Adventure from "./CategoryPages/Adventure";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
+import User1 from "./Users/User1";
 
 const App = () => {
   return ( 
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/horror" element={<Horror/>}/>
         <Route path="/signup" element={<Signup/>}/>
         <Route path="login" element={<Login/>} />
+        <Route path="/user1" element={<User1/>} />
       </Routes>
     </BrowserRouter>
 

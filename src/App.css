@@ -25,10 +25,12 @@ body{
     object-fit: cover;
     cursor: pointer;
     margin-top: 20px;
+    flex: 1;
 }
+#imgs-b img:hover{
+    flex: 3;
 
+}
 #ho :hover{
     box-shadow: 0 0 120px gold;
 }
-
-

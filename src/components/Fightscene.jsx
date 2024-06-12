@@ -1,32 +1,43 @@
 import { useState, useEffect } from "react";
 import Fightsceneele from "./Fightsceneele";
-import img1 from '/src/images/img-1.webp'
-import img2 from '/src/images/img-2.webp'
-import img3 from '/src/images/img-3.webp'
-import img4 from '/src/images/synder2.jpg'
-import img5 from '/src/images/img-5.webp'
+import img1 from "/src/images/img-1.webp";
+import img2 from "/src/images/img-2.webp";
+import img3 from "/src/images/img-3.webp";
+import img4 from "/src/images/synder2.jpg";
+import img5 from "/src/images/img-5.webp";
 
 const Fightscene = () => {
-  let [imge, setImge] = useState(null);
+
+
+  {/*let [img, setImg] = useState(null);
 
   const fetchData = () => {
-    let apiUrl = "";
+    let apiUrl =
+      "https://movie-site-stapi.onrender.com/api/fightscenes?populate=*";
+
     fetch(apiUrl)
       .then((response) => {
         return response.json();
       })
       .then((dataObj) => {
-        let imageData = dataObj.data;
-        setImge(imageData);
+        let imgData = dataObj.data;
+        setImg(imgData);
       });
   };
+
   useEffect(() => {
     fetchData();
-  }, []);
+  }, []);*/}
+
+
   return (
     <div>
-      <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">Fight scenes</h2>
-      <p className="text-white font-[Satisfy] text-4xl ml-[1.5rem]">Click on the images below to see one of the best fight scenes</p>
+      <h2 className="text-center text-[khaki] text-3xl mb-[1rem] underline font-[TimesNewRoman] font-bold">
+        Fight scenes
+      </h2>
+      <p className="text-white font-[Satisfy] text-4xl ml-[1.5rem]">
+        Click on the images below to see one of the best fight scenes
+      </p>
       <div id="imgs-b" className="flex mx-[1.5rem]">
         <a href="https://www.youtube.com/watch?v=X7mzHk-FhCA" target="_blank">
           <img className="" src={img3} alt="img" />
@@ -50,6 +61,22 @@ const Fightscene = () => {
           <img className="w-[%]" src={img5} alt="img" />
         </a>
       </div>
+
+      {/*<div className="flex mx-[1.5rem]" id="imgs-b">
+        {img !== null ? (
+          img.map((ele, index) => {
+            return <Fightsceneele
+              key={ele.index}
+              image={ele.attributes.image.data.attributes.url}
+              to={ele.attributes.link}
+            />;
+          })
+        ) : (
+          <p>Loading</p>
+        )}
+      </div>*/}
+
+
     </div>
   );
 };
