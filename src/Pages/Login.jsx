@@ -4,8 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 import veno from '/src/images/venom.jpg'
 
-const Signup = () => {
-  let [name, setName] = useState("");
+const Login = () => {
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
 
@@ -14,18 +13,16 @@ const Signup = () => {
     stateUpdater(inputValue);
   };
 
-  const createAccount = (event) => {
+  const logInto = (event) => {
     event.preventDefault();
-    if (name && email && password) {
-      let apiUrl = "https://movie-site-stapi.onrender.com/api/users";
+    if (email && password) {
+      let apiUrl = "https://movie-site-stapi.onrender.com/api/auth/local";
       let requestObject = {
         method: "POST",
         body: JSON.stringify({
           data: {
-            name: name,
-            email: email,
-            password: password,
-            role: 1
+            identifier: email,
+            password: password
           },
         }),
         headers: {
@@ -44,7 +41,6 @@ const Signup = () => {
         .then((data) => {
           if (data) {
             toast("Account Created");
-            setName("");
             setEmail("");
             setPassword("");
           } else {
@@ -55,7 +51,7 @@ const Signup = () => {
           toast(`Failed to create:${error}`);
         });
     } else {
-      alert("Name, Email and Password are missing!!");
+      alert("Email and Password are missing!!");
     }
   };
 
@@ -64,19 +60,6 @@ const Signup = () => {
       <div className="text-[cyan] ">
         <h1 className="text-[2rem]">Account Details</h1>
         <form className="text-center">
-          <div>
-            <label htmlFor="name-text">Name</label>
-            <br />
-            <input
-            className="h-[2rem] text-[red]"
-              type="text"
-              id="name-text"
-              value={name}
-              onChange={(event) => {
-                handleEvent(event, setName);
-              }}
-            />
-          </div>
           <div>
             <label htmlFor="text-email">Email</label>
             <br />
@@ -110,7 +93,7 @@ const Signup = () => {
               createAccount(event);
             }}
           >
-            Sign-UP
+            Login
           </button>
         </form>
         <ToastContainer />
@@ -126,4 +109,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;

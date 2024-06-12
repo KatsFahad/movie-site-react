@@ -58,7 +58,7 @@ const Header = () => {
             />
           </div>
           <div className="@768: mr-[5rem]" id="logs">
-            <Link>
+            <Link to='/login'>
               <button>Login</button>
             </Link>
             <Link to='/signup'>

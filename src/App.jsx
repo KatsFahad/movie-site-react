@@ -10,6 +10,7 @@ import Animation from "./CategoryPages/Animation";
 import Horror from "./CategoryPages/Horror";
 import Adventure from "./CategoryPages/Adventure";
 import Signup from "./Pages/Signup";
+import Login from "./Pages/Login";
 
 const App = () => {
   return ( 
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/comic" element={<Comic/>}/>
         <Route path="/horror" element={<Horror/>}/>
         <Route path="/signup" element={<Signup/>}/>
+        <Route path="login" element={<Login/>} />
       </Routes>
     </BrowserRouter>
 
